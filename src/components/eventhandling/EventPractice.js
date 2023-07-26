@@ -6,11 +6,15 @@ const EventPractice = () =>{
     const [username, setUsername] = useState('');
 
     function handleClick(){
-        alert(message, username);
-        setMessage(''); // 제출버튼 누르면 폼 비우기
+        alert(`${username} : ${message}`);
+        setMessage('');
+        setUsername('');
     }
-    const handleChange = (e) => {
-        setMessage(e.target.value);
+    function handleMessageChange(e){
+        setMessage(e.target.value); // 제출버튼 누르면 폼 비우기
+    }
+    const handleUsernameChange = (e) => {
+        setUsername(e.target.value);
     }
 
     // input 태그 2개(username, message)로 사용해
@@ -23,15 +27,15 @@ const EventPractice = () =>{
             <input
                     type="text"
                     name="message"
-                    placeholder="아무거나입력해보세요"
+                    placeholder="메세지 입력"
                     value={message}
-                    onChange={handleChange}/>
+                    onChange={handleMessageChange}/>
             <input
                     type="text"
                     name="username"
                     placeholder="이름입력하기"
                     value={username}
-                    onChange={handleChange}/>
+                    onChange={handleUsernameChange}/>
     <button onClick={handleClick}>확인</button>
     </>
     );
