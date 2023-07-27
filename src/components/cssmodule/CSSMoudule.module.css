@@ -1,0 +1,14 @@
+/* .wrapper 등의 보편적 명칭을 써도 어차피 암호화되어 알 수 없는 문자로 바뀔 예정*/
+
+.wrapper {
+    background: black;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+/* 프로젝트 전체적으로 적용되는 css를 작성할 때는 접두어 :global을 추가로 붙임*/
+:global .something {
+    font-weight: 800;
+    color: aqua;
+}

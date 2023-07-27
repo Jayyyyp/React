@@ -7,6 +7,9 @@ import EventPractice from "./components/eventhandling/EventPractice";
 import IterationSample from "./components/iteration/IterationSample";
 import IterationSample2 from "./components/iteration/IterationSample2";
 import Counter from "./components/hooks/Counter";
+import Info from "./components/hooks/Info";
+import Average from "./components/hooks/Average";
+import CSSModule from "./components/cssmodule/CSSModule";
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
           {/*<IterationSample/>*/}
           {/*<IterationSample2/>*/}
 
-          <Counter/>
+          {/*<Counter/>*/}
+          {/*<Info/>*/}
+          {/*<Average/>*/}
+          <CSSModule/>
       </>
   );
 }
